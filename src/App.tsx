@@ -1,16 +1,26 @@
 import ProjectCard from "./components/ProjectCard";
 
 function App() {
-  const projects = [
+
+  type Project = {
+    id: number;
+    name: string;
+    description: string;
+  };
+
+  const projects: Project[] = [
     {
+      id: 1,
       name: "SiloMusic",
       description: "App de musica propia"
     },
     {
+      id: 2,
       name: "poke dnd",
       description: "sistema de pokemon en dnd"
     },
     {
+      id: 3,
       name: "steak",
       description: "sistema de racha para proyectos"
     }
@@ -23,6 +33,7 @@ function App() {
 
       {projects.map((project) => (
         <ProjectCard
+          id={project.id}
           name={project.name}
           description={project.description}
         />
