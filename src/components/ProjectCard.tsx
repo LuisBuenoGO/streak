@@ -1,12 +1,13 @@
 type ProjectCardProps = {
   name: string;
+  description: string;
 };
 
-function ProjectCard({ name }: ProjectCardProps) {
+function ProjectCard({ name, description }: ProjectCardProps) {
   return (
     <section>
       <h2>{name}</h2>
-      <p>Mi proyecto de música</p>
+      <p>{description}</p>
     </section>
   );
 }

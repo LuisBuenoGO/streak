@@ -6,9 +6,15 @@ function App() {
       <h1>Streak</h1>
       <p>Mis proyectos, mi progreso.</p>
 
-      <ProjectCard name="SiloMusic" />
-      <ProjectCard name="EvenOS" />
-      <ProjectCard name="poke" />
+      <ProjectCard
+        name="SiloMusic" 
+        description="App de musica"  
+      />
+
+      <ProjectCard
+        name="Poke DnD" 
+        description="Sistema de pokemon para dnd"  
+      />
 
     </main>
   );
